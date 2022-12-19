@@ -3,7 +3,7 @@ resource "aws_instance" "ec2_instance" {
   instance_type     = var.instance_type
   key_name          = var.key_name
   availability_zone = var.availability_zone
-  monitoring        = var.monitoring
+  monitoring        = true
   metadata_options {
   http_tokens        = var.http_tokens
   }
