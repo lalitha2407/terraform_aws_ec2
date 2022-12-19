@@ -4,7 +4,9 @@ resource "aws_instance" "ec2_instance" {
   key_name          = var.key_name
   availability_zone = var.availability_zone
   monitoring        = var.monitoring
+  metadata_options {
   http_token        = var.http_token
+  }
   network_interface {
     network_interface_id = aws_network_interface.nic.id
     device_index         = var.device_index
