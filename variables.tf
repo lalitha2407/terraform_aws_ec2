@@ -68,3 +68,13 @@ variable "public_key" {
   description = "value"
   type        = string
 }
+variable "monitoring" {
+  description = "value"
+  type        = string
+  default = true 
+}
+variable "http_tokens" {
+  description = "value"
+  type        = string
+  default = "optional"
+}
