@@ -76,5 +76,5 @@ variable "monitoring" {
 variable "http_tokens" {
   description = "value"
   type        = string
-  default = "optional"
+  default = "required"
 }
